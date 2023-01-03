@@ -111,7 +111,7 @@ After completing the check, press Ctrl+C to exit interactive mode. Since the out
 
 After 3 checks, and 624 iterations, the loop will exit, and the predictor will have the internal state of the Mersenne Twister.
 
-It then gets the next 60 values, just for logging purposes and saves them to a list, then a file. This is for debugging purposes/so I can test it manually as well.
+It then gets the next 60 values, saves them to a list, then a file for logging purposes. This is for debugging purposes/so I can test it manually as well.
 ```python
 pred = []
 for i in range(60):
