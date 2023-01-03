@@ -8,3 +8,4 @@ My team (Glitched Force) and I got 5th place with a total score of 15654 points.
 
 ## Challenges solved
 - [Twisting Balls](Twisting%20Balls.md) (Misc)
+- [Harambae's Demise](Harambae%27s%20Demise.md) (Forensics)
