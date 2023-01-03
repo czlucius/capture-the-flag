@@ -7,4 +7,4 @@ My team (Glitched Force) and I got 5th place with a total score of 15654 points.
 <img src="https://user-images.githubusercontent.com/58442255/210302049-105e6158-42b2-4d29-979e-e73896f6e4af.jpg" width=300/>
 
 ## Challenges solved
-- [Twisting Balls](gctf-2022/Twisting%20Balls.md) (Misc)
+- [Twisting Balls](Twisting%20Balls.md) (Misc)
