@@ -9,3 +9,12 @@ My team (Glitched Force) and I got 5th place with a total score of 15654 points.
 ## Challenges solved
 - [Twisting Balls](Twisting%20Balls.md) (Misc)
 - [Harambae's Demise](Harambae%27s%20Demise.md) (Forensics)
+- BANANA is Missing!!!! (Misc)
+- Missing cat (Crypto)
+- Snowy message (Forensics)
+- Fun with Flags! (Web)
+
+
+## Challenges not solved during the CTF
+These challenges interest me, and I was close to getting the solution during the CTF.
+- [Sup3r Xor](Sup3r%20Xor.md) (Crypto)
