@@ -118,7 +118,7 @@ We then use a modified KDF to get the subsequent blocks.
 def kdf1b(first,length:int):
     blocks = [first]
     for i in range(length):
-        blocks.append(MD5(blocks[i]))![decctf txt (2)](https://user-images.githubusercontent.com/58442255/211486216-f1731b45-ecac-40e9-a2a3-28879a918a1c.png)
+        blocks.append(MD5(blocks[i]))
 
     return blocks
 
