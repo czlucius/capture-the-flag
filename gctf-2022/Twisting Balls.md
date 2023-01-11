@@ -22,7 +22,7 @@ Hint: its a 32 bit number
 there is a prompt `>>>`, in which if you type any number (even a correct number), it will output `The Twister Balls Guesses: {number here}`.  
 
 The program EOFs after a period of timeout, and a restart of the connection/program is required. Hence, each guess should not take very long.  
-It is hence impossible to do this manually.
+It is impossible to do this manually.
 
 - A brief intro  
 Random numbers on most systems, if not cryptographically secure, are generated mostly with the Mersenne Twister algorithm: https://en.wikipedia.org/wiki/Mersenne_Twister, specifically MT19337, which has a 32 bit word length (matches the challenge prompt), based on the Mersenne Prime of 2<sup>19337</sup> - 1.  
