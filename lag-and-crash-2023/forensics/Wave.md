@@ -4,7 +4,8 @@ Category: Forensics
 
 Challenge Text:  
 `I love this spectrum. My kind of vibe.`
-Challenge files: wave.wav
+
+Challenge files: [wave.wav](wave.wav)
 
 ## Solving the challenge
 When playing the audio, we hear a noisy sound, which sounds like information is hidden in the spectrogram.
