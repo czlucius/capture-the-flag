@@ -23,7 +23,7 @@ In the source, we see this comment:
 This shows that there is a page `/translate` in the site. Let us visit http://dotdashdot.d.lagncra.sh/translate.
 
 At /translate, we see this page to convert text into morse:  
-![image](https://user-images.githubusercontent.com/58442255/233391274-58c1def0-ecb3-4bfd-a815-898589108c2a.png)
+![image](https://user-images.githubusercontent.com/58442255/233391274-58c1def0-ecb3-4bfd-a815-898589108c2a.png)  
 After translation, we are presented with the morse code form of the text. If we decode the morse, we get back the original text.
 
 If we try a payload like `{{7*7}}`, we notice that the morse code is still `77`(omitting characters that cannot be represented in morse).  
